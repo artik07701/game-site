@@ -31,7 +31,7 @@ body {
 }
 
 .btn-purple:hover {
-    border-color: #753dca;
+    background-color: #753dca;
 }
 
 @media (max-width: 1400px) {
@@ -144,4 +144,25 @@ body {
     .footer-link:nth-child(2) {
     margin: 0;
     }
+}
+
+.logo {
+    animation-name: rotation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.logo:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rotation { 
+0% {
+    transform:rotate(0deg)
+}
+
+100% {
+    transform: rotate(360deg);
+}
 }
